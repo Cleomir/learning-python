@@ -22,3 +22,32 @@ print("free" in text)
 # check if string doesn't include a string
 text = "The best things in life are free!"
 print("expensive" not in text)
+
+# slice
+b = "Hello, World!"
+print(b[2:5])
+
+# slice from start
+print(b[:5])
+
+# slice to the end
+print(b[2:])
+
+# slice from the end
+print(b[-5: -2])
+
+# uppercase
+print(b.upper())
+
+# lowercase
+print(b.lower())
+
+# trim
+c = "    Hello, World!    "
+print(c.strip())
+
+# replace
+print(b.replace("H", "J"))
+
+# split
+print(b.split(","))
