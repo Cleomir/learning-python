@@ -51,3 +51,20 @@ print(b.replace("H", "J"))
 
 # split
 print(b.split(","))
+
+# concatenation
+d = "Hello"
+e = "World"
+f = d + e
+print(f)
+print(d + " " + e)
+
+# format
+name = "Cleo"
+age = 18
+text = "My name is {0}, and I am {1}"
+print(text.format(name, age))
+
+# escape character
+text = "We are the so-called \"Vikings\" from the north."
+print(text)
