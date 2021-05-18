@@ -87,3 +87,46 @@ i = 0
 while i < len(fruits):
   print(fruits[i])
   i += 1
+
+
+# map syntax
+# [item loop filter]
+
+# map
+mappedFruits = [x for x in fruits if "y" in x]
+print(mappedFruits)
+
+# sort
+fruits.sort()
+print(fruits)
+
+# sort descending
+fruits.sort(reverse = True)
+print(fruits)
+
+# custom sort
+def sortingFunction(x):
+  return abs(x - 50)
+
+numberList = [100, 50, 65, 82, 23]  
+numberList.sort(key = sortingFunction)
+print(numberList)
+
+# sort case insensitive
+uppercaseFruits = ["banana", "Orange", "Kiwi", "cherry"]
+uppercaseFruits.sort(key = str.lower)
+print(uppercaseFruits)
+
+# reverse
+uppercaseFruits.reverse()
+print(uppercaseFruits)
+
+# copy
+numberListCopy = numberList.copy()
+print(numberList)
+numberListCopy2 = list(numberListCopy)
+print(numberListCopy2)
+
+# join 
+numbersAndFruits = numberList + fruits
+print(numbersAndFruits)
