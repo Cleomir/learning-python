@@ -30,3 +30,47 @@ print(basicDictionary.items())
 # check if exists
 if "model" in basicDictionary:
   print("model is in basic dictionary")
+
+# change property
+basicDictionary["year"] = 2021
+print(basicDictionary)
+basicDictionary.update({"year": 2020})
+print(basicDictionary)
+
+# add property
+basicDictionary["doors"] = 4
+print(basicDictionary)
+
+# delete property
+del basicDictionary["doors"]
+print(basicDictionary)
+
+# loop through keys
+for key in basicDictionary:
+  print(key)
+
+# loop through values
+for key in basicDictionary:
+  print(basicDictionary[key])
+
+# copy
+copiedDictionary = basicDictionary.copy()
+print(copiedDictionary)
+
+# nested dictionary
+nestedDictionary = {
+  "child1": {
+    "name": "Emil",
+    "year": 2004
+  },
+  "child2": {
+    "name": "Tobias",
+    "year": 2007
+  }
+}
+print(nestedDictionary)
+
+# clear
+basicDictionary.clear()
+print(basicDictionary)
+
